@@ -18,16 +18,25 @@ export default function DazlLandingPage() {
         <p className="text-base md:text-lg text-gray-700 mb-8">
           Dazl helps you keep your creative hustle smooth—from projects to payments.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mb-10">
-          <input
-            type="email"
-            placeholder="What's your email?"
-            className="rounded-xl sm:rounded-l-xl w-full sm:max-w-sm px-4 py-2 border border-gray-300 focus:outline-none"
-          />
-          <button className="bg-orange-500 hover:bg-orange-600 text-white rounded-xl sm:rounded-r-xl w-full sm:w-auto px-6 py-2">
-            Let's Go
-          </button>
-        </div>
+        <form
+  action="https://formspree.io/f/xovwajbv" 
+  method="POST"
+  className="flex flex-col sm:flex-row justify-center items-center gap-2 mb-10"
+>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="What's your email?"
+    className="rounded-xl sm:rounded-l-xl w-full sm:max-w-sm px-4 py-2 border border-gray-300 focus:outline-none"
+  />
+  <button
+    type="submit"
+    className="bg-orange-500 hover:bg-orange-600 text-white rounded-xl sm:rounded-r-xl w-full sm:w-auto px-6 py-2"
+  >
+    Let's Go
+  </button>
+</form>
         <div className="mt-10 px-4">
           <img
             src="/Mockup.png"
